@@ -1,0 +1,83 @@
+if(noiseMap[y][x] <= -3.0f)
+	g.setColor(Color.BLUE.darker());
+else if(noiseMap[y][x] > -3.0f && noiseMap[y][x] <= -0.2f)
+	g.setColor(Color.BLUE);
+else if(noiseMap[y][x] > -0.2f && noiseMap[y][x] <= 0.1f)
+	g.setColor(Color.YELLOW);
+else if(noiseMap[y][x] > 0.1f && noiseMap[y][x] <= 2.0f)
+	g.setColor(Color.GREEN);
+else if(noiseMap[y][x] > 2.0f && noiseMap[y][x] <= 4.0f)
+	g.setColor(Color.GREEN.darker());
+else if(noiseMap[y][x] > 4.0f && noiseMap[y][x] <= 6.0f)
+	g.setColor(Color.GRAY.brighter());
+else if(noiseMap[y][x] > 6.0f && noiseMap[y][x] <= 8.0f)
+	g.setColor(Color.GRAY);
+else if(noiseMap[y][x] > 8.0f && noiseMap[y][x] <= 10.0f)
+	g.setColor(Color.WHITE);
+
+
+if(noiseValue <= -3.0f)
+	return new Color(61, 94, 115);
+else if(noiseValue > -3.0f && noiseValue <= -0.2f)
+	return new Color(85, 136, 167);
+else if(noiseValue > -0.2f && noiseValue <= 0.1f)
+	return new Color(191, 169, 140);
+else if(noiseValue > 0.1f && noiseValue <= 2.0f)
+	return new Color(106, 117, 80);
+else if(noiseValue > 2.0f && noiseValue <= 4.0f)
+	return new Color(94, 108, 62);
+else if(noiseValue > 4.0f && noiseValue <= 6.0f)
+	return new Color(123, 123, 116);
+else if(noiseValue > 6.0f && noiseValue <= 8.0f)
+	return new Color(157, 145, 138);
+else if(noiseValue > 8.0f && noiseValue <= 10.0f)
+	return new Color(228, 228, 227);
+else
+	return Color.WHITE;
+	
+	
+if(noiseValue <= -1.0f)
+	return new Color(217, 47, 0);
+else if(noiseValue <= 0.9f && noiseValue > -1.0f)
+	return new Color(255, 106, 0);
+else if(noiseValue <= 1.1f && noiseValue > 0.9f)
+	return new Color(50, 50, 50);
+else if(noiseValue <= 3.0f && noiseValue > 1.1f)
+	return new Color(30, 30, 30);
+else if(noiseValue <= 5.0f && noiseValue > 3.0f)
+	return new Color(10, 10, 10);
+else
+	return Color.BLACK;
+	
+
+if(noiseValue <= -3.0f)
+	return new Color(0, 74, 127);
+else if(noiseValue <= -0.1f && noiseValue > -3.0f)
+	return new Color(0, 127, 167);
+else if(noiseValue <= 0.1f && noiseValue > -0.1f)
+	return new Color(128, 128, 128);
+else if(noiseValue <= 3.0f && noiseValue > 0.1f)
+	return new Color(106, 124, 102);
+else if(noiseValue <= 6.0f && noiseValue > 3.0f)
+	return new Color(195, 215, 215);
+else
+	return Color.WHITE;
+	
+	
+if(noiseValue <= -3.0f)
+	return new Color(0, 19, 42);
+else if(noiseValue > -3.0f && noiseValue <= -0.2f)
+	return new Color(0, 19, 69);
+else if(noiseValue > -0.2f && noiseValue <= 0.1f)
+	return new Color(255, 0, 255);
+else if(noiseValue > 0.1f && noiseValue <= 2.0f)
+	return new Color(140, 0, 255);
+else if(noiseValue > 2.0f && noiseValue <= 5.0f)
+	return new Color(190, 0, 255);
+else if(noiseValue > 5.0f && noiseValue <= 8.0f)
+	return new Color(255, 0, 100);
+else if(noiseValue > 8.0f && noiseValue <= 10.0f)
+	return new Color(42, 42, 42);
+else
+	return Color.BLACK;
+	
